@@ -198,6 +198,16 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   outline: 1px solid #fff;
 }
 
+
+
+.content__details{
+  height: 100%;
+  /*width: 100%;
+  /*display: flex;
+  row-gap: 26px;*/
+}
+
+
 .content__list{
   max-height: 298px;
   overflow-y: scroll;
@@ -247,6 +257,11 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   justify-content: space-between;
 }
 
+.content__video-card-title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
 .content__video-card-description{
   /*line-height: 0.9;*/
   font-size: 18px;
@@ -255,20 +270,11 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 .content__video-card-thumbnail{
   height: 103px;
   width: 194px;
-  
-}
-
-.content__details{
-  height: 100%;
-  min-width: 534px;
-  /*width: 100%;
-  display: flex;
-  row-gap: 26px;*/
 }
 
 .title{
   margin-bottom: 26px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
