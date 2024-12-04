@@ -125,6 +125,7 @@ ol {
 .search-form__label:hover{
   text-decoration: underline;
 }
+/*сделать обводку чтобы состояние focus не создавало обводку у родительского элемента, а состояние focus-visible создавало.*/
 
 .search-form__textfield{
   appearance: none;
@@ -209,7 +210,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 
 
 .content__list{
-  max-height: 298px;
+  max-height: 310px;
   overflow-y: scroll;
   position: relative;
 }
