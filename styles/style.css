@@ -139,7 +139,13 @@ ol {
   outline: 1px solid #FFFFFF;
 }
 
+.search-form__label:focus{
+  outline: none;
+}
 
+.search-form__label:focus-visible{
+  outline: 1px solid #fff;
+}
 
 .search-form__pseudo-checkbox{
   display: inline-block;
@@ -244,11 +250,11 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   text-decoration: none;
 }
 
-.content__card-link:focus{
+.content__list-item:focus{
   outline: none;
 }
 
-.content__card-link:focus-visible{
+.content__list-item:focus-visible{
   outline: 1px solid #fff;
 }
 
