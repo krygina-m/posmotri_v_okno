@@ -159,7 +159,7 @@ ol {
 
 .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
+ 
   display: none;
   width: 15px;
   height: 15px;
