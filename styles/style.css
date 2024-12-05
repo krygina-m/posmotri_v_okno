@@ -61,13 +61,12 @@ ol {
 }
 
 .result{
-
+  margin-top: 78px;
 }
 
 .result__video-container{
-  min-height: 386px;
+  height: 386px;
   min-width: 711px;
-  margin-top: 78px;
   margin-bottom: 16px;
   position: relative;
 }
@@ -159,7 +158,6 @@ ol {
 
 .search-form__pseudo-checkbox::before {
   content: "";
- 
   display: none;
   width: 15px;
   height: 15px;
@@ -216,7 +214,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 
 
 .content__list{
-  max-height: 310px;
+  max-height: 298px;
   overflow-y: scroll;
   position: relative;
 }
