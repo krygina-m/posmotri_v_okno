@@ -114,7 +114,6 @@ ol {
 
 .search-form__label{
   width: fit-content;
-  cursor: pointer;
 }
 
 .search-form__label:not(:last-child){
@@ -163,7 +162,7 @@ ol {
   height: 15px;
   inset: 2px;
   background-color: #fff;
- 
+  margin: 1px;
 }
 
 input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
@@ -216,6 +215,10 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   max-height: 298px;
   overflow-y: scroll;
   position: relative;
+}
+
+.content__list-item{
+  margin: 1px;
 }
 
 .content__list .content__list-item:not(:last-child){
