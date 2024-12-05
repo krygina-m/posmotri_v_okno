@@ -55,7 +55,7 @@ ol {
 .content{
   display: flex;
   /*justify-content: center;*/
-  align-items: end;
+  align-items: center;
   width: 1140px;
   gap: 30px;
 }
@@ -124,7 +124,7 @@ ol {
 .search-form__label:hover{
   text-decoration: underline;
 }
-/*СЃРґРµР»Р°С‚СЊ РѕР±РІРѕРґРєСѓ С‡С‚РѕР±С‹ СЃРѕСЃС‚РѕСЏРЅРёРµ focus РЅРµ СЃРѕР·РґР°РІР°Р»Рѕ РѕР±РІРѕРґРєСѓ Сѓ СЂРѕРґРёС‚РµР»СЊСЃРєРѕРіРѕ СЌР»РµРјРµРЅС‚Р°, Р° СЃРѕСЃС‚РѕСЏРЅРёРµ focus-visible СЃРѕР·РґР°РІР°Р»Рѕ.*/
+/*сделать обводку чтобы состояние focus не создавало обводку у родительского элемента, а состояние focus-visible создавало.*/
 
 .search-form__textfield{
   appearance: none;
@@ -207,10 +207,11 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 
 .content__details{
   height: 100%;
-  width: 100%;
+  /*width: 100%;
   /*display: flex;
   row-gap: 26px;*/
 }
+
 
 .content__list{
   max-height: 298px;
@@ -231,11 +232,16 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
- /* margin: 2px;  РѕРЅ СЃРёР»СЊРЅРѕ СѓРІРµР»РёС‡РёРІР°РµС‚ РѕС‚СЃС‚СѓРї РјРµР¶РґСѓ РєР°СЂС‚РѕС‡РєР°РјРё*/
+  margin: 2px;
 }
 
 .content__card-link:hover{
   text-decoration: underline;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+  /*text-decoration: none;*/
 }
 
 .content__card-link:has(.content__video-card:active)  {
@@ -256,23 +262,14 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   justify-content: space-between;
 }
 
-.content__video-card:active {
-  background-color: #545050;
-  /*text-decoration: none;*/
-}
-
-
 .content__video-card-title{
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
 }
 
 .content__video-card-description{
-  font-family: 'Fira Sans Condensed', sans-serif;
+  /*line-height: 0.9;*/
   font-size: 18px;
-  font-weight: normal;
-  text-transform: none;
-  line-height: 0.9;
 }
 
 .content__video-card-thumbnail{
