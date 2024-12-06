@@ -86,12 +86,10 @@ ol {
 .search-form__textfield{
   width: 225px;
   height: 27px;
-
   border-width: 1px 0px;
   border-style: solid;
   border-color: #FFFFFF;
   background-color: transparent;
-
   font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -168,7 +166,6 @@ ol {
 input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   display: block;
 }
-
 
 .button{
   cursor: pointer;
