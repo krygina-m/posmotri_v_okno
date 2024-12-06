@@ -28,7 +28,7 @@ html {
   background-color: #1b1919;
   display: flex;
   align-items: center;
-  align-content: center;
+ /* align-content: center;*/
   justify-content: center;
   padding: 133px 30px;
 }
@@ -92,7 +92,7 @@ ol {
   border-color: #FFFFFF;
   background-color: transparent;
 
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -105,7 +105,7 @@ ol {
 }
 
 .search-form__fieldset-title{
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -123,7 +123,6 @@ ol {
 .search-form__label:hover{
   text-decoration: underline;
 }
-/*сделать обводку чтобы состояние focus не создавало обводку у родительского элемента, а состояние focus-visible создавало.*/
 
 .search-form__textfield{
   appearance: none;
@@ -177,7 +176,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   width: 194px;
   height: 34px;
   align-self: flex-end;
- 
   border: 1px solid #FFFFFF;
   background-color: transparent;
   font-family: Fira Sans Condensed;
@@ -199,11 +197,13 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   text-decoration: none;
 }
 
+.button:focus{
+  outline: none;
+}
+
 .button:focus-visible{
   outline: 1px solid #fff;
 }
-
-
 
 .content__details{
   height: 100%;
