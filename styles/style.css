@@ -267,7 +267,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 
 .content__video-card{
   display: flex;
-  /*align-items: start;*/
   justify-content: space-between;
 }
 
