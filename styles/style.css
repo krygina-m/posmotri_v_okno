@@ -61,7 +61,7 @@ ol {
 }
 
 .result{
-  margin-top: 85px;
+  margin-top: 78px;
 }
 
 .result__video-container{
@@ -296,8 +296,8 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 .content__video-card-thumbnail{
   height: 103px;
   width: 194px;
-  object-fit: contain;
-  object-position: center right;
+  object-fit: cover;
+  /*object-position: center right;*/
 }
 
 .title{
