@@ -30,7 +30,7 @@ html {
   align-items: center;
  /* align-content: center;*/
   justify-content: center;
-  padding: 133px 30px;
+  padding: 30px;
 }
 
 h1,
@@ -55,13 +55,13 @@ ol {
 .content{
   display: flex;
   /*justify-content: center;*/
-  align-items: end;
+  /*align-items: end;*/
   width: 1140px;
   gap: 30px;
 }
 
 .result{
-  margin-top: 78px;
+  margin-top: 85px;
 }
 
 .result__video-container{
@@ -84,8 +84,10 @@ ol {
 }
 
 .search-form__textfield{
-  width: 225px;
-  height: 27px;
+  /*width: 225px;
+  height: 27px;*/
+  min-width: 225px;
+  min-height: 27px;
   border-width: 1px 0px;
   border-style: solid;
   border-color: #FFFFFF;
@@ -96,6 +98,13 @@ ol {
   font-size: 18px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.7);
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.search-form__textfield:active{
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
 }
 
 .search-form__fieldset{
@@ -112,13 +121,14 @@ ol {
 
 .search-form__label{
   width: fit-content;
+  border: 1px solid transparent;
 }
 
 .search-form__label:not(:last-child){
   margin-right: 10px;
 }
 
-.search-form__label:hover{
+.search-form__label-text:hover{
   text-decoration: underline;
 }
 
@@ -170,12 +180,12 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 .button{
   cursor: pointer;
   padding: 0px;
-  width: 194px;
-  height: 34px;
+  min-width: 194px;
+  min-height: 34px;
   align-self: flex-end;
   border: 1px solid #FFFFFF;
   background-color: transparent;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
@@ -227,7 +237,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   display: block;
   text-decoration: none;
   color: #fff;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -270,6 +280,9 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 .content__video-card-title{
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description{
@@ -283,6 +296,8 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 .content__video-card-thumbnail{
   height: 103px;
   width: 194px;
+  object-fit: contain;
+  object-position: center right;
 }
 
 .title{
