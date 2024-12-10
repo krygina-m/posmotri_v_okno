@@ -117,6 +117,8 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  
+  margin-bottom: 5px;
 }
 
 .search-form__label{
@@ -154,8 +156,8 @@ ol {
 
 .search-form__pseudo-checkbox{
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   border: 1px solid #fff;
   vertical-align: middle;
   background-color: transparent;
@@ -275,6 +277,11 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 .content__video-card{
   display: flex;
   justify-content: space-between;
+}
+
+.content__video-card-description-container{
+  max-width: 200px;
+  overflow: hidden;
 }
 
 .content__video-card-title{
