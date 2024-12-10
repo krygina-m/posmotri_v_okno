@@ -132,6 +132,11 @@ ol {
 
 .search-form__label-text:hover{
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.search-form__label:hover .search-form__label-text{
+  text-decoration: underline;
 }
 
 .search-form__textfield:focus{
@@ -176,6 +181,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 }
 
 .button{
+  appearance: none;
   cursor: pointer;
   padding: 0px;
   min-width: 194px;
@@ -219,7 +225,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 
 .content__list{
   max-height: 297px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -241,9 +247,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  /*margin: 2px;*/
-  padding: 2px;  
- 
+  margin: 2px;
 }
 
 .content__card-link:hover{
@@ -301,7 +305,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   height: 103px;
   width: 194px;
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: center;
 }
 
 .title{
