@@ -113,12 +113,12 @@ ol {
 }
 
 .search-form__fieldset-title{
+  margin-bottom: 5px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  margin-bottom: 5px;
 }
 
 .search-form__checkbox-list{
@@ -135,7 +135,6 @@ ol {
 }
 
 .search-form__label:not(:last-child){
- /* margin-right: 8px;*/
  margin-right: 15px;
 }
 
