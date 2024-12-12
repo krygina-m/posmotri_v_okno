@@ -54,10 +54,10 @@ ol {
 
 .content{
   display: flex;
-  /*justify-content: center;*/
-  /*align-items: end;*/
   width: 1140px;
   gap: 30px;
+  /*justify-content: center;*/
+  /*align-items: end;*/
 }
 
 .result{
