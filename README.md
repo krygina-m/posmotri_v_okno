@@ -1,1 +1,1 @@
-https://github.com/krygina-m/posmotri_v_okno-fd
+https://github.com/krygina-m/posmotri-v-okno-fd
